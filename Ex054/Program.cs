@@ -10,16 +10,16 @@
 8 4 4 2
 */
 
-Console.WriteLine($"Enter array size (m x n): ");
-int m = InputNumbers("Enter m: ");
-int n = InputNumbers("Enter n: ");
-int range = InputNumbers("Enter Range: from 1 to ");
+Console.WriteLine($"Введи размер массива (m x n): ");
+int m = InputNumbers("Введи m: ");
+int n = InputNumbers("Введи n: ");
+int range = InputNumbers("Введи диапазон: from 1 to ");
 
 int[,] matrix = new int[m, n];
 CreateMatrix(matrix);
 WriteMatrix(matrix);
 
-Console.WriteLine($"Sorted array: ");
+Console.WriteLine($"Отсортированный массив: ");
 OrderMatrixLines(matrix);
 WriteMatrix(matrix);
 
